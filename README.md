@@ -1,6 +1,6 @@
 # IFTTT-Photon
 
-Este taller consiste en el aprendizaje del uso de herramientas para no programadores para crear sistemas de IoT (Internet of Things) de forma facil.
+Este taller consiste en el aprendizaje del uso de herramientas para no programadores para crear sistemas de IoT (Internet of Things) de forma fácil.
 
 Para ello, utilizaremos por un lado el servicio de internet llamado [IFTTT](https://ifttt.com/)(if this then that) y por otro lado, la placa de desarrollo [Photon] (https://www.particle.io/) de Particle.
 
