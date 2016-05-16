@@ -1,5 +1,4 @@
 # IFTTT-Photon
---------------
 
 Este taller consiste en el aprendizaje del uso de herramientas para no programadores para crear sistemas de IoT (Internet of Things) de forma facil.
 
