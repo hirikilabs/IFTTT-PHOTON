@@ -12,14 +12,8 @@
 
 
 
-const int ledPin = D0;                                          // Led will be on pin D0
-unsigned long ms = 2000;                                        // We will wait for 2 seconds in between events
-
-void setup()                            
-{
-  pinMode(ledPin, OUTPUT);                                      // D0 pin as output
-  Particle.subscribe("event", shine);                           // When event called "event" happens, do shine loop
-}
+const int ledPin = D6;                                          // Led will be on pin D0
+unsigned long ms = 5000;                                        // We will wait for 2 seconds in between events
 
 void shine(const char *event, const char *data)                 // shine lopp will be done for each event
 {
@@ -27,3 +21,10 @@ void shine(const char *event, const char *data)                 // shine lopp wi
     delay(ms);                                                  // wait
     digitalWrite(ledPin, LOW);                                  // sets the LED off
 }
+
+void setup()                            
+{
+  pinMode(ledPin, OUTPUT);                                      // D0 pin as output
+  Particle.subscribe("bot", shine);                           // When event called "event" happens, do shine loop
+}
+
