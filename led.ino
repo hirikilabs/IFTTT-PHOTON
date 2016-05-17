@@ -26,6 +26,6 @@ void setup()
 {
   pinMode(ledPin, OUTPUT);                                      // D0 pin as output
   Particle.subscribe("event", shine);                           // When event called "event" happens, do shine loop
-  //Particle.subscribe("event", shine, my dievices);                           // When event called "event" happens, do shine loop
+  //Particle.subscribe("event", shine, MY_DEVICES);                           // When event called "event" happens, do shine loop
 }
 
