@@ -25,6 +25,7 @@ void shine(const char *event, const char *data)                 // shine lopp wi
 void setup()                            
 {
   pinMode(ledPin, OUTPUT);                                      // D0 pin as output
-  Particle.subscribe("bot", shine);                           // When event called "event" happens, do shine loop
+  Particle.subscribe("event", shine);                           // When event called "event" happens, do shine loop
+  //Particle.subscribe("event", shine, my dievices);                           // When event called "event" happens, do shine loop
 }
 
