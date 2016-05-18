@@ -17,6 +17,11 @@ int lightLevel, high = 0, low = 1023;       // Arduino analog reads are discreti
 int treshold = 100;                         // the treshold value to compare our LDR readings (from 0 to 255)
 unsigned long ms = 2000;
 
+void setup() {
+    
+    pinMode(A5, OUTPUT);                    // We are using A5 as 5V pin so we have to setup it as output
+    A5 = HIGH;                              // and turn it to high
+
 void loop() {                               // main loop
 
 lightLevel = analogRead(sensorPin);         // we read the sensor value
